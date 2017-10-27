@@ -1,0 +1,3 @@
+[submodule "paydunya-php"]
+	path = paydunya-php
+	url = https://github.com/paydunya/paydunya-php.git

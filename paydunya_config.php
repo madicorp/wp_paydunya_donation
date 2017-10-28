@@ -16,7 +16,7 @@ Paydunya_Setup::setMasterKey(get_option("pd_master_key"));
 Paydunya_Setup::setPublicKey(get_option("pd_public_key"));
 Paydunya_Setup::setPrivateKey(get_option("pd_private_key"));
 Paydunya_Setup::setToken(get_option("pd_token_key"));
-if ("test" == get_option("pd_is_test")) {Paydunya_Setup::setMode("test");} // Optionnel. Utilisez cette option pour les paiements tests.
+if ("test" == get_option("pd_is_test")) {Paydunya_Setup::setMode("test");} else{Paydunya_Setup::setMode("live");}// Optionnel. Utilisez cette option pour les paiements tests.
 // Ets Informations
 Paydunya_Checkout_Store::setName(get_option("pd_name")); // Seul le nom est requis
 Paydunya_Checkout_Store::setTagline(get_option("pd_tagline"));
